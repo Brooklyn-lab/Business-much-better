@@ -1,0 +1,29 @@
+@mixin navin {
+  font-weight: 700;
+  text-decoration: none;
+  color: #8c8c8c;
+  font-size: 14px;
+  text-transform: uppercase;
+  align-items: center;
+  transition: 0.5s;
+  position: relative;
+  display: inline-block;
+  line-height: 26px;
+  background: linear-gradient(currentColor, currentColor) 50% 100% no-repeat;
+  background-size: 0 1px;
+  transition: background 250ms ease 0s;
+  &:hover {
+    color: #000;
+    background-size: 100% 1px;
+  }
+}
+@mixin nth-child-filter {
+  content: "";
+  position: absolute;
+  transform: rotate(15deg);
+  left: -25%;
+  bottom: -65%;
+  width: 1px;
+  height: 40px;
+  background: #cacaca;
+}

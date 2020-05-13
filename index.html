@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7ba71101b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./libs/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./libs/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./libs/bootstrap.min.css" />
+    <link rel="stylesheet" href="./libs/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./src/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="header__content col-lg-12">
+            <div class="header__logo col-2">
+              <img src="./img/header-logo.png" alt="LIAN" />
+            </div>
+            <div class="header__nav col-sm-9 col-lg-6 offset-lg-4">
+              <nav>
+                <ul>
+                  <li><a href="#">home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">portfolio</a></li>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">contact</a></li>
+                  <li id="loopa">
+                    <a href="#"><i class="fas fa-search loup"></i></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div id="loopa-input" class="header__search col-lg-12">
+            <form action="#" class="header__form">
+              <input name="search" placeholder="Search" />
+              <button class="header__btn">submit</button>
+            </form>
+          </div>
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">home</a></li>
+              <li><a class="menu__item" href="#">about</a></li>
+              <li><a class="menu__item" href="#">portfolio</a></li>
+              <li><a class="menu__item" href="#">blog</a></li>
+              <li><a class="menu__item" href="#">contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="slaid">
+      <div class="container">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="slaid__title"><h1>Lian Creative Agency</h1></div>
+            <p class="slaid__subtitle">
+              Minimal Freelance Portfolio
+            </p>
+          </div>
+          <div class="item">
+            <div class="slaid__title"><h1>Lian Creative Agency</h1></div>
+            <p class="slaid__subtitle">
+              Minimal Freelance Portfolio
+            </p>
+          </div>
+          <div class="item">
+            <div class="slaid__title"><h1>Lian Creative Agency</h1></div>
+            <p class="slaid__subtitle">
+              Minimal Freelance Portfolio
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="filter">
+      <div class="container">
+        <div class="filter__wrapper row">
+          <div class="tabs__btns col-lg-12 offset-xl-1 col-xl-10">
+            <div class="tabs__btn active">All</div>
+            <div class="tabs__btn">Logo</div>
+            <div class="tabs__btn">Branding</div>
+            <div class="tabs__btn">Wordpress</div>
+            <div class="tabs__btn">Web design</div>
+            <div class="tabs__btn">Ui/ix</div>
+            <div class="tabs__btn">Mobile app</div>
+          </div>
+          <div class="tabs__cards">
+            <div class="tabs__card active" data-category="logo">
+              <a data-fancybox="gallery" href="./img/filter-logo1.png"
+                ><img src="./img/filter-logo1.png"
+              /></a>
+            </div>
+            <div class="tabs__card active" data-category="branding">
+              <a data-fancybox="gallery" href="./img/filter-logo2.png"
+                ><img src="./img/filter-logo2.png"
+              /></a>
+            </div>
+            <div class="tabs__card active" data-category="wordpress">
+              <a data-fancybox="gallery" href="./img/filter-logo3.png"
+                ><img src="./img/filter-logo3.png"
+              /></a>
+            </div>
+            <div class="tabs__card active" data-category="logo">
+              <a data-fancybox="gallery" href="./img/filter-logo4.png"
+                ><img src="./img/filter-logo4.png"
+              /></a>
+            </div>
+            <div class="tabs__card active" data-category="branding">
+              <a data-fancybox="gallery" href="./img/filter-logo6.png"
+                ><img src="./img/filter-logo6.png"
+              /></a>
+            </div>
+            <div class="tabs__card active" data-category="web design">
+              <a data-fancybox="gallery" href="./img/filter-logo7.png"
+                ><img src="./img/filter-logo7.png"
+              /></a>
+            </div>
+            <div class="tabs__card active" data-category="ui/ix">
+              <a data-fancybox="gallery" href="./img/filter-logo8.png"
+                ><img src="./img/filter-logo8.png"
+              /></a>
+            </div>
+            <div class="tabs__card active" data-category="wordpress">
+              <a data-fancybox="gallery" href="./img/filter-logo5.png"
+                ><img src="./img/filter-logo5.png"
+              /></a>
+            </div>
+            <div class="tabs__card active" data-category="branding">
+              <a data-fancybox="gallery" href="./img/filter-logo9.png"
+                ><img src="./img/filter-logo9.png"
+              /></a>
+            </div>
+            <div class="tabs__card active" data-category="logo">
+              <a data-fancybox="gallery" href="./img/filter-logo10.png"
+                ><img src="./img/filter-logo10.png"
+              /></a>
+            </div>
+            <div class="tabs__card active" data-category="web design">
+              <a data-fancybox="gallery" href="./img/filter-logo11.png"
+                ><img src="./img/filter-logo11.png"
+              /></a>
+            </div>
+            <div
+              class="tabs__card active filter_invisible"
+              data-category="wordpress"
+            >
+              <a data-fancybox="gallery" href="./img/filter-logo12.png"
+                ><img src="./img/filter-logo12.png"
+              /></a>
+            </div>
+            <div
+              class="tabs__card active filter_invisible"
+              data-category="branding"
+            >
+              <a data-fancybox="gallery" href="./img/filter-logo13.png"
+                ><img src="./img/filter-logo13.png"
+              /></a>
+            </div>
+            <div
+              class="tabs__card active filter_invisible"
+              data-category="logo"
+            >
+              <a data-fancybox="gallery" href="./img/filter-logo14.png"
+                ><img src="./img/filter-logo14.png"
+              /></a>
+            </div>
+            <div
+              class="tabs__card active filter_invisible"
+              data-category="ui/ix"
+            >
+              <a data-fancybox="gallery" href="./img/filter-logo15.png"
+                ><img src="./img/filter-logo15.png"
+              /></a>
+            </div>
+            <div
+              class="tabs__card active filter_invisible"
+              data-category="mobile app"
+            >
+              <a data-fancybox="gallery" href="./img/filter-logo16.png"
+                ><img src="./img/filter-logo16.png"
+              /></a>
+            </div>
+            <div
+              class="tabs__card active filter_invisible"
+              data-category="web design"
+            >
+              <a data-fancybox="gallery" href="./img/filter-logo17.png"
+                ><img src="./img/filter-logo17.png"
+              /></a>
+            </div>
+            <div
+              class="tabs__card active filter_invisible"
+              data-category="mobile app"
+            >
+              <a data-fancybox="gallery" href="./img/filter-logo18.png"
+                ><img src="./img/filter-logo18.png"
+              /></a>
+            </div>
+          </div>
+          <button class="filter__more">load more</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer__logo col-2 offset-5">
+            <img src="./img/header-logo.png" alt="LIAN" />
+          </div>
+          <div class="footer__icons col-6 offset-3">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://myaccount.google.com/profile?pli=1" target="_blank"
+              ><i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="https://twitter.com/explore" target="_blank"
+              ><i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://dribbble.com" target="_blank"
+              ><i class="fab fa-dribbble"></i>
+            </a>
+            <a href="https://www.pinterest.com" target="_blank"
+              ><i class="fab fa-pinterest-p"></i>
+            </a>
+            <a href="https://www.instagram.com/?hl=ru" target="_blank"
+              ><i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <p>
+            © 2016 <span>Mulitix Theme</span> by ThemeForces. All Rights
+            Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./jquery-3.5.0.js"></script>
+    <script src="./libs/owl.carousel.min.js"></script>
+    <script src="./libs/jquery.fancybox.min.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
