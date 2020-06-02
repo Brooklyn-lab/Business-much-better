@@ -1,0 +1,13 @@
+.aboutLian {
+  background: url(/img/background-contact-section1.png) no-repeat right/contain;
+  background-position: right 0% bottom 50%;
+  .aboutLian__title {
+    @include title;
+    max-width: 590px;
+    margin-top: 115px;
+  }
+  .aboutLian__subtitle {
+    @include subtitle;
+    margin-bottom: 122px;
+  }
+}

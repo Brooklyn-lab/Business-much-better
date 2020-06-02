@@ -1,0 +1,120 @@
+.story {
+  background: #fff;
+  padding: 80px 0;
+  .story__img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    img {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .story__content {
+    .story__text {
+      h4 {
+        margin: 10px 0 45px;
+      }
+      p {
+        max-width: 540px;
+        width: 100%;
+        margin: 45px 0;
+      }
+    }
+    .story__statistics {
+      .story__items {
+        .story__item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 18px 0 10px;
+          h6 {
+            color: #2f302f;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 10px;
+            letter-spacing: 0.4px;
+          }
+          .story__percent {
+            width: 40px;
+            height: 21px;
+            padding: 11px 9px;
+            margin-right: 26px;
+            background-color: #041608;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              right: 54%;
+              border: 9px solid transparent;
+              border-left: 9px solid #041608;
+            }
+            p {
+              font-family: "Lato", sans-serif;
+              color: #ffffff;
+              font-size: 12px;
+              margin-bottom: 0;
+              line-height: 0;
+            }
+          }
+          .percent__two {
+            margin-right: 5px;
+          }
+          .percent__three {
+            margin-right: 225px;
+          }
+          .percent__four {
+            margin-right: 47px;
+          }
+        }
+      }
+      .story__wrapper {
+        max-width: 550px;
+        width: 100%;
+        height: 8px;
+        height: 100%;
+        padding: 3px 0 3px 3px;
+        background: #ebebeb;
+        border: 1px solid #ebebeb;
+        position: relative;
+        .story__wrapper_line {
+          max-width: 475px;
+          width: 100%;
+          height: 0;
+          height: 100%;
+          border: 1px solid #a1a1a1;
+          background-color: #a1a1a1;
+          .story__wrapper_dot {
+            position: absolute;
+            font-size: 8px;
+            color: #000;
+            right: 11%;
+            top: 1%;
+          }
+        }
+        .line__two {
+          max-width: 490px;
+          width: 100%;
+          .story__wrapper_dot {
+            right: 7%;
+          }
+        }
+        .line__three {
+          max-width: 276px;
+          width: 100%;
+          .story__wrapper_dot {
+            right: 48%;
+          }
+        }
+        .line__four {
+          max-width: 450px;
+          width: 100%;
+          .story__wrapper_dot {
+            right: 15%;
+          }
+        }
+      }
+    }
+  }
+}

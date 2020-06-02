@@ -1,11 +1,5 @@
 .getInTouch {
-  //   background: linear-gradient(
-  //     180deg,
-  //     rgba(240, 240, 242, 1) 0%,
-  //     rgba(240, 240, 242, 1) 100%
-  //   );
-  background: url(/img/background-contact-section1.png) no-repeat;
-  background-position: right 0% bottom 50%;
+  background: url(/img/background-contact-section1.png) no-repeat right/contain;
   .getInTouch__title {
     @include title;
   }

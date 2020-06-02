@@ -11,10 +11,8 @@
   .about__title {
     @include title;
     max-width: 550px;
-    margin-top: 115px;
   }
   .about__subtitle {
     @include subtitle;
-    margin-bottom: 122px;
   }
 }
