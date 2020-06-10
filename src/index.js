@@ -47,6 +47,6 @@ jQuery(document).ready(function($) {
   /*---------------------Loop-------------------------*/
   $(".fa-search").click(function() {
     $(".container, .input").toggleClass("active");
-    $("input[type='text']").focus();
+    $(".input").focus();
   });
 });

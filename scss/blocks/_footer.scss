@@ -1,6 +1,7 @@
 .footer {
   padding-top: 64px;
   background: #fff;
+  box-shadow: 5px 5px 5px 5px rgba(119, 119, 119, 0.164);
   &__logo {
     display: flex;
     justify-content: center;
@@ -14,8 +15,8 @@
     justify-content: center;
     align-items: center;
     padding: 25px 0;
-    border-top: 1px solid #95959573;
-    border-bottom: 1px solid #95959573;
+    border-top: 1px solid #9595954d;
+    border-bottom: 1px solid #9595954d;
     transition: 0.5s;
     a {
       margin-right: 55px;
