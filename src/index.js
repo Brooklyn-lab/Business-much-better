@@ -20,10 +20,10 @@
 //   items: 1,
 // });
 
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   /*---------------------Filter-------------------------*/
   let btns = $(".tabs__btn");
-  btns.on("click", function() {
+  btns.on("click", function () {
     $(this)
       .addClass("active")
       .siblings()
@@ -33,19 +33,19 @@ jQuery(document).ready(function($) {
     let btnText = $(this)
       .text()
       .toLowerCase();
-    let final = cards.filter(function() {
+    let final = cards.filter(function () {
       if (btnText === "all") {
         return cards;
       } else {
         return $(this).data("category") === btnText;
       }
     });
-    final.each(function() {
+    final.each(function () {
       $(this).addClass("active");
     });
   });
   /*---------------------Loop-------------------------*/
-  $(".fa-search").click(function() {
+  $("#headerSearch").click(function () {
     $(".container, .input").toggleClass("active");
     $(".input").focus();
   });
