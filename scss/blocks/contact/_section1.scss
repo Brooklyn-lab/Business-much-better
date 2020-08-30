@@ -1,0 +1,26 @@
+.contact-title {
+   background: url("../img/contact/background-contact-section1.png") no-repeat;
+   background-position: right 0 bottom 50%;
+   margin-top: 87px;
+
+   @media screen and (max-width: 992px) {
+      background-position: right -100px bottom 50%;
+   }
+
+   @media screen and (max-width: 768px) {
+      background-position: right -200px bottom 50%;
+   }
+
+   @media screen and (max-width: 576px) {
+      background: #fff;
+   }
+
+   &__wrapper {
+      max-width: 420px;
+      width: 100%;
+
+      @media screen and (max-width: 768px) {
+         max-width: 320px;
+      }
+   }
+}

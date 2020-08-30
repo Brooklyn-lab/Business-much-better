@@ -49,4 +49,30 @@ jQuery(document).ready(function ($) {
     $(".container, .input").toggleClass("active");
     $(".input").focus();
   });
+
+
+
+  //-------------footer-date------------------------
+  let date = new Date().getFullYear();
+  $("#date").text(new Date().getFullYear());
+
+  //-------------nav-active-link------------------------
+  $(function () {
+    var location = window.location.href;
+    var cur_url = '/' + location.split('/').pop();
+
+    $('.nav__body li').each(function () {
+      var link = $(this).find('a').attr('href');
+
+      if (cur_url == link) {
+        $(this).addClass('current');
+      }
+    });
+  });
+
+  $(".header__button, .header__owerlay").click(function () {
+    $("body").toggleClass("lock");
+    $(".menu, .header__button, .header__owerlay").toggleClass("active");
+  });
+
 });

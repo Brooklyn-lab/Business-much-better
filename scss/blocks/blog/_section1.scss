@@ -1,0 +1,13 @@
+.blog-title {
+   background: url("../img/blog/background-blog-section1.png") no-repeat;
+   background-position: right 45% bottom 50%;
+   margin-top: 87px;
+
+   @media screen and (max-width: 768px) {
+      background-position: right 35% bottom 50%;
+   }
+
+   @media screen and (max-width: 576px) {
+      background: #fff;
+   }
+}
