@@ -1,0 +1,221 @@
+.contact {
+    background: #fff;
+    padding: 75px 0;
+
+    &__body {
+       display: flex;
+       flex-wrap: wrap;
+    }
+ 
+    &__items {
+       padding: 0 15px 0 0;
+ 
+       @media screen and (max-width: 768px) {
+          display: flex;
+          align-items: center;
+          text-align: center;
+       }
+ 
+       @media screen and (max-width: 576px) {
+          flex-direction: column;
+       }
+    }
+}
+
+.contact-info {
+    padding: 0 15px;
+
+    &__span {
+        color: #222;
+        font-weight: 700;
+        letter-spacing: 0.38px;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    &__address {
+        margin: 50px 0 35px;
+        padding: 0;
+     }
+
+    &__text-address {
+        color: #777;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.38px;
+    }
+
+    &__address p:not(:last-child) {
+        margin-bottom: 35px;
+    }
+
+    &__tel {
+        padding: 0;
+        font-weight: 700;
+    }
+
+    &__tel p:not(:last-child) {
+        margin-bottom: 13px;
+    }
+
+    &__text-tel {
+        color: #555;
+        line-height: 15px;
+    }
+
+}
+
+.contact-title {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 60px;
+        background: #000;
+        border-radius: 10px;
+        top: 90px;
+
+        @media screen and (max-width: 1038px) {
+           top: 125px;
+        }
+
+        @media screen and (max-width: 992px) {
+           top: 170px;
+        }
+
+        @media screen and (max-width: 768px) {
+           display: none;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
+
+    &__info {
+        color: #000;
+        font-size: 30px;
+        letter-spacing: 12px;
+        line-height: 24px;
+        text-transform: uppercase;
+        line-height: 1.5em;
+    }
+
+    &__text {
+        color: #949594;;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+        line-height: 30px;
+    }
+ }
+ .contact-form {
+    padding: 0;
+ 
+    &__body {
+       max-width: 750px;
+       width: 100%;
+       margin: 0 auto;
+    }
+ 
+    &__inputs {
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 30px;
+ 
+       @media screen and (max-width: 768px) {
+          margin-bottom: 15px;
+       }
+ 
+       @media screen and (max-width: 576px) {
+          flex-wrap: wrap;
+          margin-bottom: 0;
+       }
+    }
+ 
+    &__input {
+       border: 1px solid #e1e1e1;
+       padding: 15px;
+       width: 100%;
+       max-height: 40px;
+       height: 100%;
+ 
+       &:not(:last-child) {
+          margin-right: 30px;
+       }
+ 
+       &::placeholder {
+          color: #c4c4c4;
+          font-size: 14px;
+          letter-spacing: 0.35px;
+          font-style: italic;
+       }
+
+       &:focus {
+          outline: none;
+       }
+
+       &_name {
+            border-left: 3px solid #afafaf;
+       }
+
+       @media screen and (max-width: 992px) {
+          &:not(:last-child) {
+             margin-right: 10px;
+ 
+             @media screen and (max-width: 576px) {
+                margin-right: 0;
+             }
+          }
+       }
+ 
+       @media screen and (max-width: 768px) {
+          margin: 0 auto 10px;
+          max-width: 100%;
+       }
+    }
+ 
+    &__textarea {
+       max-width: 810px;
+       width: 100%;
+       height: 150px;
+       padding: 15px;
+       border: 1px solid #e1e1e1;
+       resize: none;
+       margin-bottom: 29px;
+       &::placeholder {
+          color: #c4c4c4;
+          font-size: 14px;
+          letter-spacing: 0.35px;
+          font-style: italic;
+       }
+       &:focus {
+          outline: none;
+       }
+    }
+ 
+    &__btn {
+       padding: 10px 40px;
+       background: #000;
+       border: 1px solid #000;
+       color: #fff;
+       font-size: 14px;
+       font-weight: 700;
+       line-height: 21.33px;
+       text-transform: uppercase;
+       letter-spacing: 0.79px;
+       transition: 0.5s ease-in-out;
+       &:hover {
+          background: #fff;
+          color: #000;
+       }
+ 
+       @media screen and (max-width: 768px) {
+          margin: 0 auto;
+          display: flex;
+       }
+    }
+}
+ 

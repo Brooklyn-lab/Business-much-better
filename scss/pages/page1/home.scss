@@ -1,0 +1,100 @@
+.filter {
+    padding: 175px 0 100px;
+
+    &__wrapper {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    &__more {
+        max-width: 125px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 6px 0;
+        text-align: center;
+        align-items: center;
+        line-height: 19px;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        color: #fff;
+        background: #959595;
+        border: none;
+        border-radius: 2px;
+        transition: 0.25s ease-in-out;
+
+        &:focus {
+            outline: none;
+            color: #000;
+        }
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
+.tabs__btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 25px;
+    margin: 0 auto 30px;
+
+    @media screen and (max-width: 992px) {
+        margin-right: 30px;
+    }
+}
+.tabs__btn {
+    color: #777;
+    margin-right: 45px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    user-select: none;
+
+    &:hover {
+        color: #333;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.tabs__card {
+    margin-bottom: 20px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    display: none;
+    animation: appear 1s forwards;
+    @keyframes appear {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+    &.active {
+        display: block;
+    }
+    img {
+        width: 100%;
+    }
+}
+.tabs__cards {
+    columns: 3;
+    max-height: 1900px;
+    height: 100%;
+    width: auto;
+    margin-bottom: 40px;
+}

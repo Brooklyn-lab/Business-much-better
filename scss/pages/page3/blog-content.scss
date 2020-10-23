@@ -1,0 +1,330 @@
+//----------------TITLE--------------------
+.blog-title {
+    background: url("../img/blog/blog-title-bg.png") no-repeat center/cover;
+ }
+
+//----------------BLOG SECTION--------------------
+
+.blog {
+
+    background: #fafafa;
+    padding: 70px 0 100px;
+
+    &__body {
+        display: flex;
+    }
+
+    &__sidebar {
+        padding-right: 0;
+    }
+
+    &__search {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 15px 12px;
+        background: #fff;
+        margin-bottom: 25px;
+    }
+
+    &__input {
+        max-width: 280px;
+        width: 100%;
+        border: 0;
+        margin-right: 5px;
+
+        &::placeholder {
+            font-size: 13px;
+            font-weight: 300;
+            color: #a0a0a0;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__loop {
+        cursor: pointer;
+        font-size: 13px;
+        color: #fff;
+        padding: 11px;
+        background: #999;
+        border-radius: 3px;
+    }
+
+    &__button {
+        max-width: 125px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 6px 0;
+        text-align: center;
+        align-items: center;
+        line-height: 19px;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        color: #fff;
+        background: #959595;
+        border: none;
+        border-radius: 2px;
+        transition: 0.25s ease-in-out;
+
+        &:focus {
+            outline: none;
+            color: #000;
+        }
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+}
+
+//--------------------POSTS-----------------------
+
+.post {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    &__items {
+        columns: 2;
+        margin-bottom: 70px;
+    }
+
+    &__item {
+        max-width: 360px;
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 0 1px rgba(0, 0, 0, 0.1);
+        position: relative;
+        display: inline-block;
+    
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__pic {
+        position: relative;
+
+        &:before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            left: 0;
+            top: 0;
+            display: none;
+        }
+    }
+    
+    &__link{
+        max-width: 360px;
+        display: block;
+        margin: 0 auto 35px;
+
+        &:hover {
+    
+            .post__title,
+            .post__by,
+            .post__text,
+            .post__footer {
+                color: #fff;
+            }
+            background: rgba(0, 0, 0, 0.85);
+        }
+    }
+    
+    .post__link:hover .post__pic:before{
+        display: block;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__wrapper {
+        padding: 30px 35px 35px;
+    }
+
+    &__title {
+        font-size: 20px;
+        color: #333;
+        line-height: 29px;
+    }
+
+    &__by {
+        font-size: 13px;
+        color: #a0a0a0;
+        font-weight: 300;
+        margin: 15px 0 30px;
+    }
+
+    &__span {
+        margin-right: 7px;
+    }
+
+    &__text {
+        font-size: 14px;
+        color: #777;
+        line-height: 23px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+
+        font-size: 13px;
+        color: #a0a0a0;
+        font-weight: 300;
+    }
+}
+.fa-share-alt {
+    margin-right: 7px;
+}
+
+//------------------------SIDEBAR--------------------------
+
+.sidebar-title {
+    text-align: center;
+    border: none;
+    width: 100%;
+    background: #ebebeb;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        position: absolute;
+        content: '';
+        border: 7px solid transparent;
+        border-top: 7px solid #ebebeb;
+        bottom: -14px;
+        left: 48%;
+    }
+
+    &__text {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #000;
+        letter-spacing: 8px;
+        font-weight: 300;
+        padding: 10px 0;
+    }
+}
+
+.posts__wrapper_active {
+
+    &::before {
+        display: none;
+    }
+}
+
+.recent-posts {
+    background: #fff;
+    margin-bottom: 15px;
+
+    &__items {
+        padding: 25px;
+        box-shadow: 0px 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+    &__link {
+        width: auto;
+        display: block;
+
+        &:not(:last-child) {
+            margin-bottom: 11px;
+        }
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__pic {
+        margin-right: 25px;
+    }
+
+    &__item-body {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__about {
+        font-size: 16px;
+        color: #3d3d3d;
+    }
+
+    &__date {
+        font-size: 13px;
+        color: #a0a0a0;
+        font-weight: 300;
+    }
+}
+.tags {
+    background: #fff;
+    margin-bottom: 15px;
+
+    &__body {
+        padding: 25px 14px 14px 25px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        box-shadow: 0px 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+    &__item {
+        cursor: pointer;
+        border: 1px solid #a0a0a0;
+        border-radius: 3px;
+        padding: 5px 12px;
+        display: inline-block;
+        margin: 0 11px 11px 0;
+        transition: 0.25s ease-in-out;
+
+        &:hover {
+            background: #000;
+        }
+    }
+
+    &__link {
+        color: #a0a0a0;
+        font-size: 13px;
+        transition: 0.25s ease-in-out;
+
+        &:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+.instagram {
+    background: #fff;
+
+    &__body {
+        padding: 25px 25px 14px 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+    &__link {
+        margin-bottom: 11px;
+        width: auto;
+        display: block;
+    }
+
+}

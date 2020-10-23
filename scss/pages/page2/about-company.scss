@@ -1,0 +1,138 @@
+//----------------TITLE--------------------
+.about-tetle {
+    background: url("../img/about/about-title-bg.png") no-repeat center/cover;
+ }
+ 
+//----------------ABOUT COMPANY--------------------
+
+.about-company {
+
+    padding: 75px 0 50px;
+
+    &__body {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__pic {
+        margin-right: 25px;
+        height: auto;
+        width: 100%;
+        max-height: 600px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__content {
+        margin-left: 25px;
+    }
+
+    &__story {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-size: 18px;
+        color: #000;
+        text-transform: uppercase;
+        margin-bottom: 37px;
+        letter-spacing: 7px;
+    }
+
+    &__text {
+        font-size: 14px;
+        color: #828282;
+        margin-bottom: 42px;
+        line-height: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.skills-item {
+
+    &__title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 15px;
+    }
+
+    &__wrapper {
+        width: 100%;
+        height: 10px;
+        background: #ebebeb;
+        margin-bottom: 25px;
+        align-items: center;
+        display: flex;
+    }
+
+    &__line {
+        height: 2px;
+        width: 88.5%;
+        background: #a1a1a1;
+        margin-left: 5px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            right: -5px;
+            bottom: -5px;
+            background: #fff;
+            border: 4px solid #000;
+            border-radius: 50%;
+        }
+
+        &_branding {
+            width: 94%;
+        }
+
+        &_photography {
+            width: 50%;
+        }
+
+        &_web-desing {
+            width: 85%;
+        }
+    }
+
+    &__number {
+        position: absolute;
+        width: 40px;
+        height: 20px;
+        background: #041608;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        color: #fff;
+        right: -37px;
+        top: -40px;
+
+        p {
+            letter-spacing: 1px;
+            padding: 2px 0 0 2px;
+            position: relative;
+        }
+    }
+
+    &__flag {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: transparent;
+        left: 0px;
+        bottom: -8px;
+        border: 4px solid transparent;
+        border-left: 4px solid #041608;
+        border-top: 4px solid #041608;
+    }
+}
