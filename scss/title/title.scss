@@ -1,66 +1,71 @@
 .title {
-    margin-top: 87px;
- 
-    @media screen and (max-width: 992px) {
-       background-position: right -100px bottom 50%;
-    }
- 
-    @media screen and (max-width: 768px) {
-       background-position: right -200px bottom 50%;
-    }
- 
+  margin-top: 87px;
+
+  @media screen and (max-width: 992px) {
+    background-position: right -100px bottom 50%;
+  }
+
+  @media screen and (max-width: 768px) {
+    background-position: right -200px bottom 50%;
+  }
+
+  @media screen and (max-width: 576px) {
+    background: #fff;
+  }
+
+  &__body {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
     @media screen and (max-width: 576px) {
-       background: #fff;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+    padding: 0 10px;
+    background: #000;
+    display: inline-block;
+    margin-top: 115px;
+    margin-bottom: 41px;
+
+    @media screen and (max-width: 992px) {
+      font-size: 45px;
     }
 
-    &__body {
-      text-align: left;
-      
-       @media screen and (max-width: 576px) {
-          text-align: center;
-       }
+    @media screen and (max-width: 768px) {
+      font-size: 35px;
     }
- 
-    &__title {
-      color: #fff;
-      font-size: 48px;
-      font-weight: 300;
-      text-transform: uppercase;
-      letter-spacing: 4.8px;
-      padding: 0 10px;
-      background: #000;
-      display: inline-block;
-      margin-top: 115px;
-      margin-bottom: 41px;
- 
-       @media screen and (max-width: 992px) {
-          font-size: 45px;
-       }
- 
-       @media screen and (max-width: 768px) {
-          font-size: 35px;
-       }
- 
-       @media screen and (max-width: 576px) {
-          color: #000;
-       }
+
+    @media screen and (max-width: 576px) {
+      color: #000;
+      background: #fff;
+      margin-top: 50px;
     }
- 
-    &__subtitle {
-       color: #000;
-       font-size: 18px;
-       font-weight: 300;
-       line-height: 24px;
-       text-transform: uppercase;
-       letter-spacing: 7.2px;
-       margin-bottom: 122px;
- 
-       @media screen and (max-width: 768px) {
-          font-size: 15px;
-       }
- 
-       @media screen and (max-width: 576px) {
-          margin-bottom: 0;
-       }
+  }
+
+  &__subtitle {
+    color: #000;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 7.2px;
+    margin-bottom: 122px;
+    display: inline-block;
+
+    @media screen and (max-width: 768px) {
+      font-size: 15px;
     }
- }
+
+    @media screen and (max-width: 576px) {
+      margin-bottom: 0;
+    }
+  }
+}

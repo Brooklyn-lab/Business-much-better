@@ -1,6 +1,18 @@
 //----------------TITLE--------------------
-.about-tetle {
+.about-title {
   background: url("../img/about/about-title-bg.png") no-repeat center/cover;
+
+  @media screen and (max-width: 992px) {
+    background-position: right -120px bottom 50%;
+  }
+
+  @media screen and (max-width: 768px) {
+    background-position: right -200px bottom 50%;
+  }
+
+  @media screen and (max-width: 576px) {
+    background: #fff;
+  }
 }
 
 //----------------ABOUT COMPANY--------------------
@@ -15,7 +27,7 @@
   &__body {
     display: flex;
     justify-content: center;
-    margin: 0 -25px;
+    margin: 0 -15px;
 
     @media screen and (max-width: 992px) {
       flex-wrap: wrap;
@@ -29,8 +41,8 @@
   &__pic {
     max-height: 600px;
     height: auto;
-    width: calc(100% / 12 * 5);
-    margin: 0 25px;
+    width: calc(100% / 12 * 6 - 30px);
+    margin: 0 15px;
 
     @media screen and (max-width: 992px) {
       width: 100%;
@@ -60,8 +72,8 @@
   }
 
   &__content {
-    width: calc(100% / 12 * 6);
-    margin: 0 25px;
+    width: calc(100% / 12 * 6 - 30px);
+    margin: 0 15px;
 
     @media screen and (max-width: 992px) {
       width: calc(100% / 12 * 8);
