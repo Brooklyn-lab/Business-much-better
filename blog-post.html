@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Lian</title>
+   <script src="https://kit.fontawesome.com/7ba71101b8.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./libs/bootstrap.min.css" />
+   <link rel="stylesheet" href="./src/index.css" />
+</head>
+
+<header class="header">
+   <div class="container">
+      <div class="row">
+         <div class="header__body col-12">
+            <object class="header__logo col-3" type="image/svg+xml" data="./img/header-logo.svg">
+               <img src="./img/header-logo.svg" alt="Everad"></a>
+            </object>
+            <div class="header__nav nav col-md 8 offset-md-1 col-xl-6 offset-xl-3">
+               <nav class="nav__wrapper menu col-12">
+                  <ul class="nav__body">
+                     <li class="nav__item"><a class="nav__link menu__item" href="/home">home</a></li>
+                     <li class="nav__item"><a class="nav__link menu__item" href="/about">about</a></li>
+                     <li class="nav__item"><a class="nav__link menu__item" href="/portfolio">portfolio</a></li>
+                     <li class="nav__item"><a class="nav__link menu__item" href="/">blog</a></li>
+                     <li class="nav__item"><a class="nav__link menu__item" href="/contact">contact</a></li>
+                     <li class="nav__item search"><a class="nav__link" href="#"><i class="fas fa-search"></i></a></li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="header__burger">
+               <div class="header__owerlay"></div>
+               <div class="header__button">
+                  <span></span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+
+<section class="title blog-title">
+   <div class="container">
+      <div class="title__body">
+         <div class="title__wrapper">
+            <h1 class="title__title">News About Lian</h1>
+         </div>
+         <p class="title__subtitle">Latest News & Insights</p>
+      </div>
+   </div>
+</section>
+
+<section class="blog">
+   <div class="container">
+      <div class="blog__title">
+         <h2>I am a Blog Post with an Awesome Image</h2>
+         <div class="blog__subtitle">
+            <p>by Jenn Pereira</p>
+            <p>February 28, 2015</p>
+            <p><i class="far fa-heart"></i>324 likes</p>
+         </div>
+      </div>
+      <div class="blog__img">
+         <img src="./img/blog/blog-section2.png" alt="lamp" />
+      </div>
+      <div class="blog__content">
+         <p class="blog__text blog__text_top">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit. Ut wisi enim ad minim veniam, quis nostrud
+            exerci tation ullamcorper suscipit.
+         </p>
+         <p class="blog__text">
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+            molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+            vero eros et accumsan et iusto odio dignissim qui blandit praesent
+            luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            Nam liber tempor cum soluta nobis eleifend option congue nihil
+            imperdiet doming id quod mazim placerat facer possim assum.
+         </p>
+      </div>
+      <div class="blog__note">
+         <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt. Lorem ipsum dolor sit amet, consectetuer adipiscing
+            elit, sed diam nonummy.
+         </p>
+      </div>
+      <div class="blog__content">
+         <p class="blog__text blog__text_top">
+            <span class="blog__span">This is a Heading</span>
+            Typi non habent claritatem insitam; est usus legentis in iis qui
+            facit eorum claritatem. Investigationes demonstraverunt lectores
+            legere me lius quod ii legunt saepius. Claritas est etiam processus
+            dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est
+            notare quam littera gothica, quam nunc putamus parum claram,
+            anteposuerit litterarum formas humanitatis per seacula quarta decima
+            et quinta decima. Eodem modo typi, qui nunc nobis videntur parum
+            clari, fiant sollemnes in futurum.
+         </p>
+         <p class="blog__text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+            velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            facilisis at vero eros et accumsan et iusto odio dignissim qui
+            blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Nam liber tempor cum soluta nobis eleifend option
+            congue.
+         </p>
+      </div>
+   </div>
+</section>
+
+<section class="comment">
+   <div class="container">
+      <div class="comment__body">
+         <div class="comment__title">
+            <h5>Leave a Comment</h5>
+         </div>
+         <form class="comment__form" action="#">
+            <div class="comment__inputs">
+               <input class="comment__input input-name" type="text" name="Name" placeholder="Name" />
+               <input class="comment__input" type="email" name="Email" placeholder="Email" />
+               <input class="comment__input" type="text" name="Website" placeholder="Website" />
+            </div>
+            <textarea class="comment__texterea" name="Message" placeholder="Message"></textarea>
+            <button class="comment__btn" type="submit">Send MessaGe</button>
+         </form>
+      </div>
+   </div>
+</section>
+
+<footer class="footer">
+   <div class="footer__body">
+      <object class="footer__logo" type="image/svg+xml" data="./img/header-logo.svg">
+         <img src="./img/header-logo.svg" alt="Everad"></a>
+      </object>
+      <div class="footer__icons">
+         <div class="footer__wrapper">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://myaccount.google.com/profile?pli=1" target="_blank"><i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://dribbble.com" target="_blank"><i class="fab fa-dribbble"></i>
+            </a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest-p"></i>
+            </a>
+            <a href="https://www.instagram.com/?hl=ru" target="_blank"><i class="fab fa-instagram"></i>
+            </a>
+         </div>
+      </div>
+      <p class="footer__footer">
+         © <span id="date"></span> <span class="footer__span">Mulitix Theme</span> by ThemeForces. All Rights
+         Reserved.
+      </p>
+   </div>
+</footer>
+
+<body>
+
+   <script src="./jquery-3.5.0.js"></script>
+   <script src="./src/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+.blog {
+   background: #fff;
+   padding: 70px 0 0;
+
+   @media screen and (max-width: 768px) {
+      padding: 50px 0 0;
+   }
+
+   &__title {
+      text-align: center;
+
+      h2 {
+         color: #333;
+         font-size: 30px;
+         font-weight: 300;
+         line-height: 36px;
+         letter-spacing: 4.5px;
+         margin-bottom: 25px;
+
+         @media screen and (max-width: 768px) {
+            font-size: 27px;
+            letter-spacing: 2.5px;
+         }
+
+         @media screen and (max-width: 576px) {
+            font-size: 25px;
+            letter-spacing: 1.5px;
+         }
+      }
+   }
+
+   &__subtitle {
+      display: flex;
+      justify-content: center;
+      p {
+         color: #777;
+         font-size: 14px;
+         font-weight: 700;
+         line-height: 36px;
+         margin-right: 60px;
+
+         @media screen and (max-width: 576px) {
+            margin-right: 25px;
+            line-height: 25px;
+         }
+
+         &:last-child {
+            margin-right: 0;
+         }
+         i {
+            margin-right: 10px;
+         }
+      }
+   }
+
+   &__img {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+
+      @media screen and (max-width: 576px) {
+         margin-bottom: 25px;
+      }
+
+      img {
+         width: 100%;
+         height: auto;
+      }
+   }
+
+   &__content {
+      max-width: 810px;
+      width: 100%;
+      margin: auto;
+   }
+
+   &__text {
+      color: #777;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.35px;
+      line-height: 30px;
+   }
+
+   &__text_top {
+      margin-bottom: 50px;
+
+      @media screen and (max-width: 768px) {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__span {
+      display: block;
+      color: #333;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      line-height: 45px;
+      text-transform: uppercase;
+   }
+
+   &__note {
+      max-width: 942px;
+      width: 100%;
+      margin: 33px auto;
+      border: 1px solid #e7e6e6;
+      border-left: 3px solid #afafaf;
+      padding: 25px 35px;
+
+      @media screen and (max-width: 576px) {
+         margin: 20px auto;
+         padding: 20px 35px;
+      }
+
+      p {
+         max-width: 870px;
+         width: 100%;
+         color: #777;
+         font-family: "PT Serif", serif;
+         font-style: italic;
+         font-size: 18px;
+         font-weight: 700;
+         line-height: 30px;
+      }
+   }
+}
