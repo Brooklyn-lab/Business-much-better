@@ -16,35 +16,53 @@
 
     <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="header__body col-12">
-                    <a class="header__linkLogo" href="#">
-                        <object class="header__logo col-3" type="image/svg+xml" data="./img/header-logo.svg">
-                            <img src="./img/header-logo.svg" alt="Everad">
-                        </object>
-                    </a>
-                    <div class="header__nav nav col-md 8 offset-md-1 col-xl-6 offset-xl-3">
-                        <nav class="nav__wrapper menu col-12">
-                            <ul class="nav__body">
-                                <li class="nav__item"><a class="nav__link menu__item" href="#">home</a></li>
-                                <li class="nav__item"><a class="nav__link menu__item" href="#">about</a></li>
-                                <li class="nav__item"><a class="nav__link menu__item" href="#">portfolio</a>
-                                </li>
-                                <li class="nav__item"><a class="nav__link menu__item" href="#">blog</a></li>
-                                <li class="nav__item"><a class="nav__link menu__item" href="#">contact</a></li>
-                                <li class="nav__item search"><a class="nav__link menu__search" href="#"><i
-                                            class="fas fa-search"></i></a></li>
-                            </ul>
-                        </nav>
+      <!-- Begin Header-Navigation -->
+
+      <div class="header__navigation">
+        <div class="header__logo">
+           <a href="#" class="header__logo-link">
+            <img src="./img/header-logo.svg" alt="Everad">
+           </a>
+        </div>
+        <nav class="header__nav nav menu" id="menu">
+           <ul class="nav__items">
+              <li class="nav__item">
+                 <a href="#home" class="nav__link">home</a>
+              </li>
+              <li class="nav__item">
+                 <a href="#services" class="nav__link">about</a>
+              </li>
+              <li class="nav__item">
+                 <a href="#about" class="nav__link">portfolio</a>
+              </li>
+              <li class="nav__item">
+                 <a href="#works" class="nav__link">blog</a>
+              </li>
+              <li class="nav__item">
+                 <a href="#blog" class="nav__link">contact</a>
+              </li>
+              <li class="nav__item nav-search">
+                <i class="nav-search__fa fa fa-search" aria-hidden="true"></i>
+                
+                <div class="nav-search__wrapper">
+                    <div class="nav-search__container">
+                      <input type="text" class="nav-search__input" placeholder="Search">
                     </div>
-                    <div class="header__burger">
-                        <div class="header__owerlay"></div>
-                        <div class="header__button">
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                  </div>
+              </li>
+           </ul>
+        </nav>
+
+        <!-- Begin Header-Burger -->
+
+        <div class="header__burger">
+           <div class="header__overlay"></div>
+           <div class="header__button">
+              <span id="span"></span>
+           </div>
+        </div>
+
+        <!-- End Header-Burger -->
         </div>
     </header>
 
@@ -55,7 +73,9 @@
     <section class="blog-title title">
         <div class="container">
             <div class="title__body">
-                <h1 class="title__title">news about lian</h1>
+                <div class="title__wrapper">                    
+                    <h1 class="title__title">news about lian</h1>
+                </div>
                 <p class="title__subtitle">latest news & insights</p>
             </div>
         </div>
@@ -72,7 +92,7 @@
 
                     <!----------- BEGIN CONTENT ------------->
 
-                    <div class="blog__posts post col-lg-6 col-xl-8">
+                    <div class="blog__posts post col-12 col-lg-8">
                         <div class="post__items">
                             <a href="#" class="post__link">
                                 <div class="post__item">
@@ -319,7 +339,7 @@
 
                     <!----------- BEGIN SIDEBAR ------------->
 
-                    <div class="blog__sidebar col-lg-6 col-xl-4">
+                    <div class="blog__sidebar col-0 col-lg-4">
 
                         <label for="blog-search" class="blog__search">
                             <input class="blog__input" type="text" id="blog-search" placeholder="Search">

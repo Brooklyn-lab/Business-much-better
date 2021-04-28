@@ -16,35 +16,59 @@
 
     <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="header__body col-12">
-                    <a class="header__linkLogo" href="#">
-                        <object class="header__logo col-3" type="image/svg+xml" data="./img/header-logo.svg">
-                            <img src="./img/header-logo.svg" alt="Everad">
-                        </object>
-                    </a>
-                    <div class="header__nav nav col-md 8 offset-md-1 col-xl-6 offset-xl-3">
-                        <nav class="nav__wrapper menu col-12">
-                            <ul class="nav__body">
-                                <li class="nav__item"><a class="nav__link menu__item" href="#">home</a></li>
-                                <li class="nav__item"><a class="nav__link menu__item" href="#">about</a></li>
-                                <li class="nav__item"><a class="nav__link menu__item" href="#">portfolio</a>
-                                </li>
-                                <li class="nav__item"><a class="nav__link menu__item" href="#">blog</a></li>
-                                <li class="nav__item"><a class="nav__link menu__item" href="#">contact</a></li>
-                                <li class="nav__item search"><a class="nav__link menu__search" href="#"><i
-                                            class="fas fa-search"></i></a></li>
-                            </ul>
-                        </nav>
+
+      <!-- Begin Header-Navigation -->
+
+      <div class="header__navigation">
+        <div class="header__logo">
+           <a href="#" class="header__logo-link">
+            <img src="./img/header-logo.svg" alt="Everad">
+           </a>
+        </div>
+        <nav class="header__nav nav menu" id="menu">
+           <ul class="nav__items">
+              <li class="nav__item">
+                 <a href="#home" class="nav__link">home</a>
+              </li>
+              <li class="nav__item">
+                 <a href="#services" class="nav__link">about</a>
+              </li>
+              <li class="nav__item">
+                 <a href="#about" class="nav__link">portfolio</a>
+              </li>
+              <li class="nav__item">
+                 <a href="#works" class="nav__link">blog</a>
+              </li>
+              <li class="nav__item">
+                 <a href="#blog" class="nav__link">contact</a>
+              </li>
+              <li class="nav__item nav-search">
+                <i class="nav-search__fa fa fa-search" aria-hidden="true"></i>
+                
+                <div class="nav-search__wrapper">
+                    <div class="nav-search__container">
+                      <input type="text" class="nav-search__input" placeholder="Search">
                     </div>
-                    <div class="header__burger">
-                        <div class="header__owerlay"></div>
-                        <div class="header__button">
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                  </div>
+              </li>
+           </ul>
+        </nav>
+
+        <!-- Begin Header-Burger -->
+
+        <div class="header__burger">
+           <div class="header__overlay"></div>
+           <div class="header__button">
+              <span id="span"></span>
+           </div>
+        </div>
+
+        <!-- End Header-Burger -->
+
+     </div>
+
+     <!-- End Header-Navigation -->
+
         </div>
     </header>
 
@@ -81,8 +105,14 @@
                     <p class="contact-info__text-address"><span class="contact-info__span">Address:</span>Igbalangao, Bugasong, Antique</p>
                   </div>
                   <div class="contact-info__tel">
-                    <p class="contact-info__text-tel"><span class="contact-info__span">Tell:</span>123-456-7890</p>
-                    <p class="contact-info__text-tel"><span class="contact-info__span">Fax:</span>123-456-7890</p>
+                    <div class="contact-info__tel-wrapper">
+                        <span class="contact-info__span">Tell:</span>
+                        <a class="contact-info__text-tel" href="tel:+1234567890">123-456-7890</a>
+                    </div>
+                    <div>
+                        <span class="contact-info__span">Fax:</span>
+                        <a class="contact-info__text-tel" href="tel:+1234567890">123-456-7890</a>
+                    </div>
                   </div>
               </div>
             </div>

@@ -26,6 +26,7 @@ a {
 }
 a:hover {
   text-decoration: none;
+  color: #555;
 }
 a:focus,
 :active {
@@ -49,6 +50,9 @@ blockquote,
 dl,
 dd {
   margin: 0;
+}
+.fa {
+  font-weight: 700;
 }
 // img {
 //   max-width: 100%;

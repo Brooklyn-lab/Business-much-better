@@ -1,11 +1,24 @@
 jQuery(document).ready(function () {
 
-    let burger = $(".header__burger");
+    // let burger = $(".header__burger");
 
-    burger.on("click", function() {
-        $(".nav__wrapper").toggleClass("menu");
+    // burger.on("click", function() {
+    //     $(".nav__wrapper").toggleClass("menu");
+    // })
+
+
+    let burger = $(".header__burger"); /* Создаем переменную, в которой сам бургер */
+    let all = $(".header__logo-link, .header__overlay, .header__button, .menu"); /* Создаем переменную, в которой все классы, которым добавляем active */
+ 
+    burger.on("click", function () { /* Создаем функцию по клику на бургер */
+       all.toggleClass("active"); /* Добавляем и убираем класс active при клике */
     })
 
+    $(".nav-search__fa").click(function(){
+        $(".nav-search__container, .nav-search__input").toggleClass("active");
+        $("nav-search__input[type='text']").focus();
+    });
+    
     //-------------footer-date------------------------
     let date = new Date().getFullYear();
     $("#date").text(new Date().getFullYear());

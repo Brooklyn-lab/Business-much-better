@@ -93,6 +93,10 @@
     line-height: 15px;
   }
 
+  &__tel-wrapper {
+    margin-bottom: 15px;
+  }
+
   &__wrapper {
     @media screen and (max-width: 768px) {
       display: flex;
@@ -109,7 +113,6 @@
     }
   }
 }
-
 .contact-title {
   position: relative;
 

@@ -212,3 +212,8 @@
     border-top: 4px solid #041608;
   }
 }
+
+.skills-item:hover .skills-item__number {
+  transition: 0.25s ease-in-out;
+  transform: scale(1.3);
+}
